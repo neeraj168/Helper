@@ -1,0 +1,9 @@
+d for driving.
+b for bicycle.
+w for walking.
+l for two wheeler.
+
+val uri = Uri.parse("http://maps.google.com/maps?saddr=0.0000,0.0000 &daddr=28.478548, 77.121474 &dirflg=d")
+val intent = Intent(Intent.ACTION_VIEW, uri)
+intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+startActivity(intent)
